@@ -1,0 +1,7 @@
+URI: wp-context
+
+URI: wp-context.json
+Content-Type: application/json; qs=0.4
+
+URI: wp-context.jsonld
+Content-Type: application/ld+json; qs=0.5

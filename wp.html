@@ -1,0 +1,289 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="generator" content="ReSpec 21.0.2"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>Web Publication Manifest Ontology</title>
+    
+    
+    
+    <style type="text/css">
+    span.orcid a {
+        border-bottom: none !important;
+    }
+    </style>
+<style id="respec-mainstyle">/*****************************************************************
+ * ReSpec 3 CSS
+ * Robin Berjon - http://berjon.com/
+ *****************************************************************/
+
+/* Override code highlighter background */
+.hljs {
+  background: transparent !important;
+}
+
+/* --- INLINES --- */
+h1 abbr,
+h2 abbr,
+h3 abbr,
+h4 abbr,
+h5 abbr,
+h6 abbr,
+a abbr {
+  border: none;
+}
+
+dfn {
+  font-weight: bold;
+}
+
+a.internalDFN {
+  color: inherit;
+  border-bottom: 1px solid #99c;
+  text-decoration: none;
+}
+
+a.externalDFN {
+  color: inherit;
+  border-bottom: 1px dotted #ccc;
+  text-decoration: none;
+}
+
+a.bibref {
+  text-decoration: none;
+}
+
+cite .bibref {
+  font-style: normal;
+}
+
+code {
+  color: #c83500;
+}
+
+th code {
+  color: inherit;
+}
+
+/* --- TOC --- */
+
+.toc a,
+.tof a {
+  text-decoration: none;
+}
+
+a .secno,
+a .figno {
+  color: #000;
+}
+
+ul.tof,
+ol.tof {
+  list-style: none outside none;
+}
+
+.caption {
+  margin-top: 0.5em;
+  font-style: italic;
+}
+
+/* --- TABLE --- */
+
+table.simple {
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-bottom: 3px solid #005a9c;
+}
+
+.simple th {
+  background: #005a9c;
+  color: #fff;
+  padding: 3px 5px;
+  text-align: left;
+}
+
+.simple th[scope="row"] {
+  background: inherit;
+  color: inherit;
+  border-top: 1px solid #ddd;
+}
+
+.simple td {
+  padding: 3px 10px;
+  border-top: 1px solid #ddd;
+}
+
+.simple tr:nth-child(even) {
+  background: #f0f6ff;
+}
+
+/* --- DL --- */
+
+.section dd > p:first-child {
+  margin-top: 0;
+}
+
+.section dd > p:last-child {
+  margin-bottom: 0;
+}
+
+.section dd {
+  margin-bottom: 1em;
+}
+
+.section dl.attrs dd,
+.section dl.eldef dd {
+  margin-bottom: 0;
+}
+
+#issue-summary > ul,
+.respec-dfn-list {
+  column-count: 2;
+}
+
+#issue-summary li,
+.respec-dfn-list li {
+  list-style: none;
+}
+
+details.respec-tests-details {
+  margin-left: 1em;
+  display: inline-block;
+  vertical-align: top;
+}
+
+details.respec-tests-details > * {
+  padding-right: 2em;
+}
+
+details.respec-tests-details[open] {
+  z-index: 999999;
+  position: absolute;
+  border: thin solid #cad3e2;
+  border-radius: .3em;
+  background-color: white;
+  padding-bottom: .5em;
+}
+
+details.respec-tests-details[open] > summary {
+  border-bottom: thin solid #cad3e2;
+  padding-left: 1em;
+  margin-bottom: 1em;
+  line-height: 2em;
+}
+
+details.respec-tests-details > ul {
+  width: 100%;
+  margin-top: -0.3em;
+}
+
+details.respec-tests-details > li {
+  padding-left: 1em;
+}
+
+@media print {
+  .removeOnSave {
+    display: none;
+  }
+}
+</style><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/base.css"><link rel="canonical" href="https://www.w3.org/TR/wp-vocab/"><script id="initialUserConfig" type="application/json">{
+  "postProcess": [
+    null
+  ],
+  "specStatus": "base",
+  "edDraftURI": "https://w3c.github.io/wp-vocab/",
+  "wg": "Publishing Working Group",
+  "noRecTrack": true,
+  "editors": [
+    {
+      "name": "Ivan Herman",
+      "url": "https://www.w3.org/People/Ivan/",
+      "company": "W3C",
+      "w3cid": 7382,
+      "orcid": "0000-0003-0782-2704",
+      "companyURL": "https://www.w3.org"
+    }
+  ],
+  "processVersion": 2018,
+  "includePermalinks": false,
+  "permalinkEdge": true,
+  "permalinkHide": false,
+  "diffTool": "http://www.aptest.com/standards/htmldiff/htmldiff.pl",
+  "wgURI": "https://www.w3.org/publishing/groups/publ-wg/",
+  "wgPublicList": "public-publ-wg",
+  "wgPatentURI": "https://www.w3.org/2004/01/pp-impl/100074/status",
+  "github": {
+    "repoURL": "https://github.com/w3c/wp-vocab/",
+    "branch": "master"
+  },
+  "publishISODate": "2018-06-20T00:00:00.000Z",
+  "generatedSubtitle": "Document 20 June 2018"
+}</script><meta name="description" content="Vocabulary document, specified by the W3C Publishing Working Group, defining the classes, properties, and individuals to be used by the Web Publication Manifest."></head>
+
+<body class="h-entry"><div class="head">
+  <a href="https://www.w3.org/" class="logo">
+      <img alt="W3C" width="72" height="48" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C">
+  </a>
+  <h1 id="title" class="title p-name">Web Publication Manifest Ontology</h1>
+  
+  <h2 id="w3c-document-20-june-2018"><abbr title="World Wide Web Consortium">W3C</abbr> Document <time class="dt-published" datetime="2018-06-20">20 June 2018</time></h2>
+  <dl>
+    
+    <dt>Latest editor's draft:</dt><dd><a href="https://w3c.github.io/wp-vocab/">https://w3c.github.io/wp-vocab/</a></dd>
+    
+    
+    
+    
+    
+    
+    <dt>Editor:</dt>
+    <dd class="p-author h-card vcard" data-editor-id="7382"><a class="u-url url p-name fn" href="https://www.w3.org/People/Ivan/">Ivan Herman</a> (<a class="p-org org h-org h-card" href="https://www.w3.org"><abbr title="World Wide Web Consortium">W3C</abbr></a>) <span class="orcid"><a href="https://orcid.org/0000-0003-0782-2704"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.gif" alt="orcid logo"></a></span></dd>
+    
+    
+    <dt>Participate:</dt><dd>
+      <a href="https://github.com/w3c/wp-vocab/">GitHub w3c/wp-vocab</a>
+    </dd><dd>
+      <a href="https://github.com/w3c/wp-vocab/issues/">File a bug</a>
+    </dd><dd>
+      <a href="https://github.com/w3c/wp-vocab/commits/master">Commit history</a>
+    </dd><dd>
+      <a href="https://github.com/w3c/wp-vocab/pulls/">Pull requests</a>
+    </dd>
+  </dl>
+  
+  
+  
+  <p class="copyright">
+        <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©
+        2018
+        
+        <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
+        (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
+        <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>,
+        <a href="https://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>).
+        
+        <abbr title="World Wide Web Consortium">W3C</abbr> <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>,
+        <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and
+        <a rel="license" href="https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document">permissive document license</a>
+        rules apply.
+      </p>
+  <hr title="Separator for header">
+</div>
+    <section id="abstract" class="introductory"><h2 id="abstract-0">Abstract</h2>
+        <p>Vocabulary document, specified by the <a href="https://www.w3.org/publishing/groups/publ-wg"><abbr title="World Wide Web Consortium">W3C</abbr> Publishing Working Group</a>, defining the classes, properties, and individuals to be used by the <a href="https://www.w3.org/TR/wpub/">Web Publication Manifest</a>.</p>
+    </section>
+    <section id="sotd" class="introductory"><h2 id="status-of-this-document">Status of This Document</h2><p>
+        This document is merely a <abbr title="World Wide Web Consortium">W3C</abbr>-internal  document. It
+        has no official standing of any kind and does not represent consensus of the <abbr title="World Wide Web Consortium">W3C</abbr>
+        Membership.
+      </p><p>This is a vocabulary specification for the <a href="https://www.w3.org/TR/wpub/">Web Publication Manifest</a>, defined by the <a href="https://www.w3.org/publishing/groups/publ-wg"><abbr title="World Wide Web Consortium">W3C</abbr> Publishing Working Group</a>. The formal specifications of the terms, their usage, etc., are normatively defined by the specification for <a href="https://www.w3.org/TR/wpub/">Web Publications</a>.
+    </p></section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a href="#available-representations" class="tocxref"><span class="secno">1. </span>Available representations</a></li></ol></nav>
+    <section id="available-representations">
+        <!--OddPage--><h2 id="x1-available-representations"><span class="secno">1. </span>Available representations</h2>
+        <ul>
+            <li><a href="https://www.w3.org/TR/wpub">Vocabulary documentation</a></li>
+            <li><a href="https://www.w3.org/ns/wp.ttl">Ontology in Turtle</a></li>
+            <li><a href="https://www.w3.org/ns/wp.jsonld">Ontology in JSON-LD</a></li>
+            <li><a href="https://www.w3.org/ns/wp.rdf">Ontology in RDF/XML</a></li>
+        </ul>
+    </section>
+
+
+<p role="navigation" id="back-to-top"><a href="#title"><abbr title="Back to Top">↑</abbr></a></p><script src="https://www.w3.org/scripts/TR/2016/fixup.js"></script></body></html>
