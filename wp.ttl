@@ -3,7 +3,7 @@
 @prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dc:     <http://purl.org/dc/elements/1.1/> .
-@prefix schema: <htt://schema.com> .
+@prefix schema: <https://schema.com> .
 
 
 wp: a owl:Ontology ;
@@ -35,7 +35,7 @@ wp:resources a rdf:Property ;
 	rdfs:comment "The resource list enumerates all resources that are used in the processing and rendering of a Web Publication (i.e., that are within its bounds) and that are not listed in the default reading order." ;
 	rdfs:isDefinedBy <https://www.w3.org/TR/wpub/#wp-resource-list> .
 
-wp:externalResources a rdf:Property ;
+wp:lists a rdf:Property ;
 	rdfs:label "List of Extra Resources" ;
 	rdfs:comment "The list of extra resources enumerates all resources that are used in the processing and rendering of a Web Publication but are not within its bounds (i.e., are not listed in the default reading order or the resource list) but are, rather, external to the Web Publication." ;
 	rdfs:isDefinedBy <https://www.w3.org/TR/wpub/#wp-extra-list> .

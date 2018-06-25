@@ -67,21 +67,6 @@
     "@type": [
       "http://www.w3.org/2002/07/owl#Ontology"
     ],
-    "htt://schema.comcreator": [
-      {
-        "@id": "_:ub1bL10C20"
-      }
-    ],
-    "htt://schema.comdateModified": [
-      {
-        "@value": "2018-06-20"
-      }
-    ],
-    "htt://schema.comtitle": [
-      {
-        "@value": "Web Publication Manifest Ontology"
-      }
-    ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@value": "Terms defined by the Publishing Working Group, to be used by the Web Publication Manifest"
@@ -90,6 +75,42 @@
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
       {
         "@id": "https://www.w3.org/TR/wpub/"
+      }
+    ],
+    "https://schema.comcreator": [
+      {
+        "@id": "_:ub1bL10C20"
+      }
+    ],
+    "https://schema.comdateModified": [
+      {
+        "@value": "2018-06-20"
+      }
+    ],
+    "https://schema.comtitle": [
+      {
+        "@value": "Web Publication Manifest Ontology"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.w3.org/ns/wp#lists",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The list of extra resources enumerates all resources that are used in the processing and rendering of a Web Publication but are not within its bounds (i.e., are not listed in the default reading order or the resource list) but are, rather, external to the Web Publication."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.w3.org/TR/wpub/#wp-extra-list"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "List of Extra Resources"
       }
     ]
   },
@@ -154,32 +175,11 @@
   {
     "@id": "_:ub1bL10C20",
     "@type": [
-      "htt://schema.comPerson"
+      "https://schema.comPerson"
     ],
-    "htt://schema.comname": [
+    "https://schema.comname": [
       {
         "@value": "Ivan Herman"
-      }
-    ]
-  },
-  {
-    "@id": "https://www.w3.org/ns/wp#externalResources",
-    "@type": [
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The list of extra resources enumerates all resources that are used in the processing and rendering of a Web Publication but are not within its bounds (i.e., are not listed in the default reading order or the resource list) but are, rather, external to the Web Publication."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "https://www.w3.org/TR/wpub/#wp-extra-list"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "List of Extra Resources"
       }
     ]
   },
