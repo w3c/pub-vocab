@@ -55,12 +55,9 @@
             "@container": "@set",
             "@id": "https://www.w3.org/ns/wp#resources"
         },
-        "lists": {
+        "links": {
             "@container": "@set",
-            "@id": "https://www.w3.org/ns/wp#lists"
-        },
-        "tableOfContents": {
-            "@id": "https://www.w3.org/ns/wp#tableOfContents"
+            "@id": "https://www.w3.org/ns/wp#links"
         },
         "PublicationLink": {
             "@id": "https://www.w3.org/ns/wp#PublicationLink"

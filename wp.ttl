@@ -33,15 +33,10 @@ wp:resources a rdf:Property ;
 	rdfs:comment "The resource list enumerates all resources that are used in the processing and rendering of a Web Publication (i.e., that are within its bounds) and that are not listed in the default reading order." ;
 	rdfs:isDefinedBy <https://www.w3.org/TR/wpub/#wp-resource-list> .
 
-wp:lists a rdf:Property ;
+wp:links a rdf:Property ;
 	rdfs:label "List of Extra Resources" ;
 	rdfs:comment "The list of extra resources enumerates all resources that are used in the processing and rendering of a Web Publication but are not within its bounds (i.e., are not listed in the default reading order or the resource list) but are, rather, external to the Web Publication." ;
 	rdfs:isDefinedBy <https://www.w3.org/TR/wpub/#wp-extra-list> .
-
-wp:tableOfContents a rdf:Property ;
-	rdfs:label "Link to the table of contents." ;
-	rdfs:comment "Link to the table of contents." ;
-	rdfs:isDefinedBy <https://www.w3.org/TR/wpub/#wp-table-of-contents> .
 
 wp:PublicationLink a rdfs:Class ;
 	rdfs:label "General type used for links" ;
