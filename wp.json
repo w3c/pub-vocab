@@ -21,27 +21,6 @@
     ]
   },
   {
-    "@id": "https://www.w3.org/ns/wp#tableOfContents",
-    "@type": [
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "Link to the table of contents."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "https://www.w3.org/TR/wpub/#wp-table-of-contents"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Link to the table of contents."
-      }
-    ]
-  },
-  {
     "@id": "https://www.w3.org/ns/wp#rel",
     "@type": [
       "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -90,27 +69,6 @@
     "https://schema.comtitle": [
       {
         "@value": "Web Publication Manifest Ontology"
-      }
-    ]
-  },
-  {
-    "@id": "https://www.w3.org/ns/wp#lists",
-    "@type": [
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The list of extra resources enumerates all resources that are used in the processing and rendering of a Web Publication but are not within its bounds (i.e., are not listed in the default reading order or the resource list) but are, rather, external to the Web Publication."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "https://www.w3.org/TR/wpub/#wp-extra-list"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "List of Extra Resources"
       }
     ]
   },
@@ -201,6 +159,27 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "Resource List"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.w3.org/ns/wp#links",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The list of extra resources enumerates all resources that are used in the processing and rendering of a Web Publication but are not within its bounds (i.e., are not listed in the default reading order or the resource list) but are, rather, external to the Web Publication."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.w3.org/TR/wpub/#wp-extra-list"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "List of Extra Resources"
       }
     ]
   },
