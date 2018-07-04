@@ -3,15 +3,12 @@
 @prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dc:     <http://purl.org/dc/elements/1.1/> .
-@prefix schema: <https://schema.com> .
+@prefix schema: <https://schema.org/> .
 
 
 wp: a owl:Ontology ;
     schema:title "Web Publication Manifest Ontology" ;
-    schema:creator [
-    	a schema:Person; 
-    	schema:name "Ivan Herman"
-    ] ;
+    schema:creator <https://www.ivan-herman.net/foaf#me> ;
     schema:dateModified "2018-06-20" ;
     rdfs:comment "Terms defined by the Publishing Working Group, to be used by the Web Publication Manifest" ;
     rdfs:seeAlso <https://www.w3.org/TR/wpub/> .
@@ -19,24 +16,24 @@ wp: a owl:Ontology ;
 
 # Terms not defined by schema.org but necessary for Web Publication Manifests
 wp:readingProgression a rdf:Property ;
-	rdfs:label "Reading Progression Direction" ;
+	rdfs:label "Reading progression direction" ;
 	rdfs:comment "The reading progression establishes the reading direction from one resource to the next within a Web Publication." ;
 	rdfs:isDefinedBy <https://www.w3.org/TR/wpub/#wp-reading-progression> .
 
 wp:readingOrder a rdf:Property ;
-	rdfs:label "Default Reading Order" ;
+	rdfs:label "Default reading order" ;
 	rdfs:comment "The default reading order is a specific progression through a set of Web Publication resources." ;
 	rdfs:isDefinedBy <https://www.w3.org/TR/wpub/#wp-default-reading-order> .
 
 wp:resources a rdf:Property ;
-	rdfs:label "Resource List" ;
+	rdfs:label "Resource list" ;
 	rdfs:comment "The resource list enumerates all resources that are used in the processing and rendering of a Web Publication (i.e., that are within its bounds) and that are not listed in the default reading order." ;
 	rdfs:isDefinedBy <https://www.w3.org/TR/wpub/#wp-resource-list> .
 
 wp:links a rdf:Property ;
-	rdfs:label "List of Extra Resources" ;
+	rdfs:label "List of extra resources" ;
 	rdfs:comment "The list of extra resources enumerates all resources that are used in the processing and rendering of a Web Publication but are not within its bounds (i.e., are not listed in the default reading order or the resource list) but are, rather, external to the Web Publication." ;
-	rdfs:isDefinedBy <https://www.w3.org/TR/wpub/#wp-extra-list> .
+	rdfs:isDefinedBy <https://www.w3.org/TR/wpub/#links> .
 
 wp:PublicationLink a rdfs:Class ;
 	rdfs:label "General type used for links" ;

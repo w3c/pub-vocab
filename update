@@ -1,0 +1,8 @@
+#!/bin/sh
+echo "Converting the vocabulary files"
+closure -o xml wp.ttl > wp.rdf
+closure -o json wp.ttl | jsonld flatten --indent 4 -c https://www.w3.org/ns/wp-vocab-context.jsonld  > wp.json
+echo "Copying the files to /ns"
+cp wp.{html,json,rdf,ttl} wp-vocab-context.jsonld wp-context.jsonld ~/W3C/WWW/ns/
+echo "CVS commit"
+(cd ~/W3C/WWW/ns; cvs commit -m "" wp.* wp-context.jsonld wp-vocab-context.jsonld)

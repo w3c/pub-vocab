@@ -1,202 +1,68 @@
-[
-  {
-    "@id": "https://www.w3.org/ns/wp#readingOrder",
-    "@type": [
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The default reading order is a specific progression through a set of Web Publication resources."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "https://www.w3.org/TR/wpub/#wp-default-reading-order"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Default Reading Order"
-      }
+{
+    "@context": "https://www.w3.org/ns/wp-vocab-context.jsonld",
+    "@graph": [
+        {
+            "@id": "https://www.w3.org/ns/wp#",
+            "@type": "owl:Ontology",
+            "rdfs:comment": "Terms defined by the Publishing Working Group, to be used by the Web Publication Manifest",
+            "rdfs:seeAlso": "https://www.w3.org/TR/wpub/",
+            "schema:creator": "https://www.ivan-herman.net/foaf#me",
+            "schema:dateModified": "2018-06-20",
+            "schema:title": "Web Publication Manifest Ontology"
+        },
+        {
+            "@id": "wp:PublicationLink",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "General type used for external links.",
+            "rdfs:isDefinedBy": "https://www.w3.org/TR/wpub/",
+            "rdfs:label": "General type used for links"
+        },
+        {
+            "@id": "wp:accessibility-report",
+            "@type": "rdfs:Resource",
+            "rdfs:isDefinedBy": "https://www.w3.org/TR/wpub/#wp-a11y",
+            "rdfs:label": "Rel value for an accessibility report"
+        },
+        {
+            "@id": "wp:cover-page",
+            "@type": "rdfs:Resource",
+            "rdfs:isDefinedBy": "https://www.w3.org/TR/wpub/#wp-cover",
+            "rdfs:label": "Rel value for a cover page"
+        },
+        {
+            "@id": "wp:links",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The list of extra resources enumerates all resources that are used in the processing and rendering of a Web Publication but are not within its bounds (i.e., are not listed in the default reading order or the resource list) but are, rather, external to the Web Publication.",
+            "rdfs:isDefinedBy": "https://www.w3.org/TR/wpub/#links",
+            "rdfs:label": "List of extra resources"
+        },
+        {
+            "@id": "wp:readingOrder",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The default reading order is a specific progression through a set of Web Publication resources.",
+            "rdfs:isDefinedBy": "https://www.w3.org/TR/wpub/#wp-default-reading-order",
+            "rdfs:label": "Default reading order"
+        },
+        {
+            "@id": "wp:readingProgression",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The reading progression establishes the reading direction from one resource to the next within a Web Publication.",
+            "rdfs:isDefinedBy": "https://www.w3.org/TR/wpub/#wp-reading-progression",
+            "rdfs:label": "Reading progression direction"
+        },
+        {
+            "@id": "wp:rel",
+            "@type": "rdf:Property",
+            "rdfs:comment": "Equivalent to the rel attribute in HTML; uses either the IANA link registry data, or specially minted URL-s.",
+            "rdfs:isDefinedBy": "https://www.w3.org/TR/wpub/",
+            "rdfs:label": "Relation type"
+        },
+        {
+            "@id": "wp:resources",
+            "@type": "rdf:Property",
+            "rdfs:comment": "The resource list enumerates all resources that are used in the processing and rendering of a Web Publication (i.e., that are within its bounds) and that are not listed in the default reading order.",
+            "rdfs:isDefinedBy": "https://www.w3.org/TR/wpub/#wp-resource-list",
+            "rdfs:label": "Resource list"
+        }
     ]
-  },
-  {
-    "@id": "https://www.w3.org/ns/wp#rel",
-    "@type": [
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "Equivalent to the rel attribute in HTML; uses either the IANA link registry data, or specially minted URL-s."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "https://www.w3.org/TR/wpub/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Relation type"
-      }
-    ]
-  },
-  {
-    "@id": "https://www.w3.org/ns/wp#",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Ontology"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "Terms defined by the Publishing Working Group, to be used by the Web Publication Manifest"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://www.w3.org/TR/wpub/"
-      }
-    ],
-    "https://schema.comcreator": [
-      {
-        "@id": "_:ub1bL10C20"
-      }
-    ],
-    "https://schema.comdateModified": [
-      {
-        "@value": "2018-06-20"
-      }
-    ],
-    "https://schema.comtitle": [
-      {
-        "@value": "Web Publication Manifest Ontology"
-      }
-    ]
-  },
-  {
-    "@id": "https://www.w3.org/ns/wp#PublicationLink",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "General type used for external links."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "https://www.w3.org/TR/wpub/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "General type used for links"
-      }
-    ]
-  },
-  {
-    "@id": "https://www.w3.org/ns/wp#readingProgression",
-    "@type": [
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The reading progression establishes the reading direction from one resource to the next within a Web Publication."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "https://www.w3.org/TR/wpub/#wp-reading-progression"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Reading Progression Direction"
-      }
-    ]
-  },
-  {
-    "@id": "https://www.w3.org/ns/wp#cover-page",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Resource"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "https://www.w3.org/TR/wpub/#wp-cover"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Rel value for a cover page"
-      }
-    ]
-  },
-  {
-    "@id": "_:ub1bL10C20",
-    "@type": [
-      "https://schema.comPerson"
-    ],
-    "https://schema.comname": [
-      {
-        "@value": "Ivan Herman"
-      }
-    ]
-  },
-  {
-    "@id": "https://www.w3.org/ns/wp#resources",
-    "@type": [
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The resource list enumerates all resources that are used in the processing and rendering of a Web Publication (i.e., that are within its bounds) and that are not listed in the default reading order."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "https://www.w3.org/TR/wpub/#wp-resource-list"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Resource List"
-      }
-    ]
-  },
-  {
-    "@id": "https://www.w3.org/ns/wp#links",
-    "@type": [
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The list of extra resources enumerates all resources that are used in the processing and rendering of a Web Publication but are not within its bounds (i.e., are not listed in the default reading order or the resource list) but are, rather, external to the Web Publication."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "https://www.w3.org/TR/wpub/#wp-extra-list"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "List of Extra Resources"
-      }
-    ]
-  },
-  {
-    "@id": "https://www.w3.org/ns/wp#accessibility-report",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Resource"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "https://www.w3.org/TR/wpub/#wp-a11y"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Rel value for an accessibility report"
-      }
-    ]
-  }
-]
+}

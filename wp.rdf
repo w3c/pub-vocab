@@ -1,55 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-  xmlns:ns1="https://"
+  xmlns:schema="https://schema.org/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
+  <rdf:Property rdf:about="https://www.w3.org/ns/wp#links">
+    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/wpub/#links"/>
+    <rdfs:label>List of extra resources</rdfs:label>
+    <rdfs:comment>The list of extra resources enumerates all resources that are used in the processing and rendering of a Web Publication but are not within its bounds (i.e., are not listed in the default reading order or the resource list) but are, rather, external to the Web Publication.</rdfs:comment>
+  </rdf:Property>
   <rdf:Property rdf:about="https://www.w3.org/ns/wp#rel">
     <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/wpub/"/>
     <rdfs:label>Relation type</rdfs:label>
     <rdfs:comment>Equivalent to the rel attribute in HTML; uses either the IANA link registry data, or specially minted URL-s.</rdfs:comment>
   </rdf:Property>
-  <rdf:Property rdf:about="https://www.w3.org/ns/wp#resources">
-    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/wpub/#wp-resource-list"/>
-    <rdfs:label>Resource List</rdfs:label>
-    <rdfs:comment>The resource list enumerates all resources that are used in the processing and rendering of a Web Publication (i.e., that are within its bounds) and that are not listed in the default reading order.</rdfs:comment>
-  </rdf:Property>
-  <rdf:Property rdf:about="https://www.w3.org/ns/wp#readingProgression">
-    <rdfs:label>Reading Progression Direction</rdfs:label>
-    <rdfs:comment>The reading progression establishes the reading direction from one resource to the next within a Web Publication.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/wpub/#wp-reading-progression"/>
+  <rdf:Property rdf:about="https://www.w3.org/ns/wp#readingOrder">
+    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/wpub/#wp-default-reading-order"/>
+    <rdfs:label>Default reading order</rdfs:label>
+    <rdfs:comment>The default reading order is a specific progression through a set of Web Publication resources.</rdfs:comment>
   </rdf:Property>
   <rdfs:Resource rdf:about="https://www.w3.org/ns/wp#cover-page">
     <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/wpub/#wp-cover"/>
     <rdfs:label>Rel value for a cover page</rdfs:label>
   </rdfs:Resource>
-  <owl:Ontology rdf:about="https://www.w3.org/ns/wp#">
-    <ns1:schema.comcreator>
-      <ns1:schema.comPerson rdf:nodeID="ub1bL10C20">
-        <ns1:schema.comname>Ivan Herman</ns1:schema.comname>
-      </ns1:schema.comPerson>
-    </ns1:schema.comcreator>
-    <ns1:schema.comdateModified>2018-06-20</ns1:schema.comdateModified>
-    <rdfs:comment>Terms defined by the Publishing Working Group, to be used by the Web Publication Manifest</rdfs:comment>
-    <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/wpub/"/>
-    <ns1:schema.comtitle>Web Publication Manifest Ontology</ns1:schema.comtitle>
-  </owl:Ontology>
-  <rdf:Property rdf:about="https://www.w3.org/ns/wp#links">
-    <rdfs:label>List of Extra Resources</rdfs:label>
-    <rdfs:comment>The list of extra resources enumerates all resources that are used in the processing and rendering of a Web Publication but are not within its bounds (i.e., are not listed in the default reading order or the resource list) but are, rather, external to the Web Publication.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/wpub/#wp-extra-list"/>
-  </rdf:Property>
-  <rdf:Property rdf:about="https://www.w3.org/ns/wp#readingOrder">
-    <rdfs:comment>The default reading order is a specific progression through a set of Web Publication resources.</rdfs:comment>
-    <rdfs:label>Default Reading Order</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/wpub/#wp-default-reading-order"/>
-  </rdf:Property>
   <rdfs:Class rdf:about="https://www.w3.org/ns/wp#PublicationLink">
     <rdfs:comment>General type used for external links.</rdfs:comment>
     <rdfs:label>General type used for links</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/wpub/"/>
   </rdfs:Class>
+  <rdf:Property rdf:about="https://www.w3.org/ns/wp#resources">
+    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/wpub/#wp-resource-list"/>
+    <rdfs:comment>The resource list enumerates all resources that are used in the processing and rendering of a Web Publication (i.e., that are within its bounds) and that are not listed in the default reading order.</rdfs:comment>
+    <rdfs:label>Resource list</rdfs:label>
+  </rdf:Property>
+  <owl:Ontology rdf:about="https://www.w3.org/ns/wp#">
+    <schema:dateModified>2018-06-20</schema:dateModified>
+    <rdfs:comment>Terms defined by the Publishing Working Group, to be used by the Web Publication Manifest</rdfs:comment>
+    <schema:title>Web Publication Manifest Ontology</schema:title>
+    <schema:creator rdf:resource="https://www.ivan-herman.net/foaf#me"/>
+    <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/wpub/"/>
+  </owl:Ontology>
+  <rdf:Property rdf:about="https://www.w3.org/ns/wp#readingProgression">
+    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/wpub/#wp-reading-progression"/>
+    <rdfs:comment>The reading progression establishes the reading direction from one resource to the next within a Web Publication.</rdfs:comment>
+    <rdfs:label>Reading progression direction</rdfs:label>
+  </rdf:Property>
   <rdfs:Resource rdf:about="https://www.w3.org/ns/wp#accessibility-report">
     <rdfs:label>Rel value for an accessibility report</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/wpub/#wp-a11y"/>

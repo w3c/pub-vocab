@@ -1,8 +1,20 @@
 {
     "@context": {
+        "artist": {
+            "@container": "@list",
+            "@id": "https://schema.org/artist"
+        },
         "author": {
             "@container": "@list",
             "@id": "https://schema.org/author"
+        },
+        "contributor": {
+            "@container": "@list",
+            "@id": "https://schema.org/contributor"
+        },
+        "colorist": {
+            "@container": "@list",
+            "@id": "https://schema.org/colorist"
         },
         "creator": {
             "@container": "@list",
@@ -12,29 +24,9 @@
             "@container": "@list",
             "@id": "https://schema.org/editor"
         },
-        "publisher": {
-            "@container": "@list",
-            "@id": "https://schema.org/publisher"
-        },
         "illustrator": {
             "@container": "@list",
             "@id": "https://schema.org/illustrator"
-        },
-        "translator": {
-            "@container": "@list",
-            "@id": "https://schema.org/translator"
-        },
-        "readBy": {
-            "@container": "@list",
-            "@id": "https://schema.org/readBy"
-        },
-        "artist": {
-            "@container": "@list",
-            "@id": "https://schema.org/artist"
-        },
-        "colorist": {
-            "@container": "@list",
-            "@id": "https://schema.org/colorist"
         },
         "letterer": {
             "@container": "@list",
@@ -44,7 +36,19 @@
             "@container": "@list",
             "@id": "https://schema.org/penciler"
         },
-        "readingProgression": {
+        "publisher": {
+            "@container": "@list",
+            "@id": "https://schema.org/publisher"
+        },
+        "readBy": {
+            "@container": "@list",
+            "@id": "https://schema.org/readBy"
+        },
+        "translator": {
+            "@container": "@list",
+            "@id": "https://schema.org/translator"
+        },
+         "readingProgression": {
             "@id": "https://www.w3.org/ns/wp#readingProgression"
         },
         "readingOrder": {
