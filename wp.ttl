@@ -25,6 +25,11 @@ wp:readingOrder a rdf:Property ;
 	rdfs:comment "The default reading order is a specific progression through a set of Web Publication resources." ;
 	rdfs:isDefinedBy <https://www.w3.org/TR/wpub/#wp-default-reading-order> .
 
+wp:inDirection a rdf:Property ;
+	rdfs:label "Base direction" ;
+	rdfs:comment "Base direction of the publication and the infoset textual items" ;
+	rdfs:isDefinedBy <https://www.w3.org/TR/wpub/> .
+
 wp:resources a rdf:Property ;
 	rdfs:label "Resource list" ;
 	rdfs:comment "The resource list enumerates all resources that are used in the processing and rendering of a Web Publication (i.e., that are within its bounds) and that are not listed in the default reading order." ;
@@ -46,7 +51,7 @@ wp:rel a rdf:Property ;
 	rdfs:isDefinedBy <https://www.w3.org/TR/wpub/> .
 
 # Missing rel values; these may become obsolete at some point if the equivalents are accepted by IANA
-wp:cover-page a rdfs:Resource ;
+wp:cover a rdfs:Resource ;
 	rdfs:label "Rel value for a cover page" ;
 	rdfs:isDefinedBy <https://www.w3.org/TR/wpub/#wp-cover> .
 

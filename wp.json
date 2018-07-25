@@ -24,10 +24,17 @@
             "rdfs:label": "Rel value for an accessibility report"
         },
         {
-            "@id": "wp:cover-page",
+            "@id": "wp:cover",
             "@type": "rdfs:Resource",
             "rdfs:isDefinedBy": "https://www.w3.org/TR/wpub/#wp-cover",
             "rdfs:label": "Rel value for a cover page"
+        },
+        {
+            "@id": "wp:inDirection",
+            "@type": "rdf:Property",
+            "rdfs:comment": "Base direction of the publication and the infoset textual items",
+            "rdfs:isDefinedBy": "https://www.w3.org/TR/wpub/",
+            "rdfs:label": "Base direction"
         },
         {
             "@id": "wp:links",
