@@ -28,6 +28,10 @@
             "@container": "@list",
             "@id": "https://schema.org/illustrator"
         },
+        "inker": {
+            "@container": "@list",
+            "@id": "https://schema.org/illustrator"
+        },
         "letterer": {
             "@container": "@list",
             "@id": "https://schema.org/letterer"
