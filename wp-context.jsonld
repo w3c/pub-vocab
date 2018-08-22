@@ -75,7 +75,6 @@
             "@id": "https://www.w3.org/ns/wp#rel"
         },
         "inDirection": {
-            "@container": "@set",
             "@id": "https://www.w3.org/ns/wp#inDirection"
         },
         "encodingFormat" : "http://schema.org/encodingFormat"
