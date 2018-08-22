@@ -80,6 +80,7 @@
         },
         "encodingFormat" : "http://schema.org/encodingFormat",
         "type" : "@type",
-        "id" : "@id"
+        "id" : "@id",
+        "title" : "http://schema.org/name"
     }
 }
