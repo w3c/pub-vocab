@@ -77,6 +77,10 @@
         "inDirection": {
             "@id": "https://www.w3.org/ns/wp#inDirection"
         },
-        "encodingFormat" : "http://schema.org/encodingFormat"
+        "encodingFormat" : "http://schema.org/encodingFormat",
+        "id"       : "@id",
+        "type"     : "@type",
+        "value"    : "@value",
+        "language" : "@language"
     }
 }
