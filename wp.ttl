@@ -55,6 +55,10 @@ wp:cover a rdfs:Resource ;
 	rdfs:label "Rel value for a cover page" ;
 	rdfs:isDefinedBy <https://www.w3.org/TR/wpub/#wp-cover> .
 
+wp:pagelist a rdfs:Resource ;
+	rdfs:label "Rel value for a pagelist" ;
+	rdfs:isDefinedBy <https://www.w3.org/TR/wpub/#wp-pagelist> .
+
 wp:accessibility-report a rdfs:Resource ;
 	rdfs:label "Rel value for an accessibility report" ;
 	rdfs:isDefinedBy <https://www.w3.org/TR/wpub/#wp-a11y> .

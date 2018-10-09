@@ -44,6 +44,12 @@
             "rdfs:label": "List of extra resources"
         },
         {
+            "@id": "wp:pagelist",
+            "@type": "rdfs:Resource",
+            "rdfs:isDefinedBy": "https://www.w3.org/TR/wpub/#wp-pagelist",
+            "rdfs:label": "Rel value for a pagelist"
+        },
+        {
             "@id": "wp:readingOrder",
             "@type": "rdf:Property",
             "rdfs:comment": "The default reading order is a specific progression through a set of Web Publication resources.",
