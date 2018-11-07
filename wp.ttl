@@ -28,7 +28,7 @@ wp:readingOrder a rdf:Property ;
 wp:inDirection a rdf:Property ;
 	rdfs:label "Base direction" ;
 	rdfs:comment "Base direction of the publication and the infoset textual items" ;
-	rdfs:isDefinedBy <https://www.w3.org/TR/wpub/> .
+	rdfs:isDefinedBy <https://www.w3.org/TR/wpub/#manifest-default-language-and-dir> .
 
 wp:resources a rdf:Property ;
 	rdfs:label "Resource list" ;
@@ -40,15 +40,15 @@ wp:links a rdf:Property ;
 	rdfs:comment "The list of extra resources enumerates all resources that are used in the processing and rendering of a Web Publication but are not within its bounds (i.e., are not listed in the default reading order or the resource list) but are, rather, external to the Web Publication." ;
 	rdfs:isDefinedBy <https://www.w3.org/TR/wpub/#links> .
 
-wp:PublicationLink a rdfs:Class ;
-	rdfs:label "General type used for links" ;
-	rdfs:comment "General type used for external links." ;
-	rdfs:isDefinedBy <https://www.w3.org/TR/wpub/> .
+wp:LinkedResource a rdfs:Class ;
+	rdfs:label "General type used for resources linked from the manifest." ;
+	rdfs:comment "General type used for resources linked from the manifest." ;
+	rdfs:isDefinedBy <https://www.w3.org/TR/wpub/#linkedResource> .
 
 wp:rel a rdf:Property ;
 	rdfs:label "Relation type" ;
 	rdfs:comment "Equivalent to the rel attribute in HTML; uses either the IANA link registry data, or specially minted URL-s." ;
-	rdfs:isDefinedBy <https://www.w3.org/TR/wpub/> .
+	rdfs:isDefinedBy <https://www.w3.org/TR/wpub/#linkedResource> .
 
 # Missing rel values; these may become obsolete at some point if the equivalents are accepted by IANA
 wp:cover a rdfs:Resource ;
