@@ -1,5 +1,9 @@
- {
-    "group":      ["100074"]
-,   "contacts":   ["iherman"]
-,   "shortName":  "wp-vocab"
+{
+  "group": [
+    "100074"
+  ],
+  "contacts": [
+    "iherman"
+  ],
+  "repo-type": ["tool", "article"]
 }
