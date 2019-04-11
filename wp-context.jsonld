@@ -52,7 +52,8 @@
             "@container": "@list",
             "@id": "https://schema.org/translator"
         },
-         "readingProgression": {
+        "encodingFormat" : "http://schema.org/encodingFormat",
+        "readingProgression": {
             "@id": "https://www.w3.org/ns/wp#readingProgression"
         },
         "readingOrder": {
@@ -83,7 +84,6 @@
         "totalDuration": {
             "@id": "https://www.w3.org/ns/wp#totalDuration"
         },
-        "encodingFormat" : "http://schema.org/encodingFormat",
         "id"       : "@id",
         "type"     : "@type",
         "value"    : "@value",
