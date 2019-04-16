@@ -27,15 +27,10 @@
     <rdfs:comment>The default reading order is a specific progression through a set of Web Publication resources.</rdfs:comment>
     <rdfs:label>Default reading order</rdfs:label>
   </rdf:Property>
-  <rdf:Property rdf:about="https://www.w3.org/ns/wp#totalDuration">
-    <rdfs:label>Resource level duration</rdfs:label>
-    <rdfs:comment>Duration value for a time-based media resource</rdfs:comment>
+  <rdf:Property rdf:about="https://www.w3.org/ns/wp#length">
+    <rdfs:label>Resource level length</rdfs:label>
+    <rdfs:comment>The total length of a time-based media resource in (possibly fractional) seconds. </rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/wpub/#linkedResource"/>
-  </rdf:Property>
-  <rdf:Property rdf:about="https://www.w3.org/ns/wp#globalDuration">
-    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/wpub/#global-duration"/>
-    <rdfs:comment>Duration value for a time-based web publication</rdfs:comment>
-    <rdfs:label>Publication level duration</rdfs:label>
   </rdf:Property>
   <rdf:Property rdf:about="https://www.w3.org/ns/wp#links">
     <rdfs:comment>The list of extra resources enumerates all resources that are used in the processing and rendering of a Web Publication but are not within its bounds (i.e., are not listed in the default reading order or the resource list) but are, rather, external to the Web Publication.</rdfs:comment>

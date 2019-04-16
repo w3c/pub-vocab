@@ -48,13 +48,6 @@
       "rdfs:label": "Rel value for a cover page"
     },
     {
-      "@id": "wp:globalDuration",
-      "@type": "rdf:Property",
-      "rdfs:comment": "Duration value for a time-based web publication",
-      "rdfs:isDefinedBy": "https://www.w3.org/TR/wpub/#global-duration",
-      "rdfs:label": "Publication level duration"
-    },
-    {
       "@id": "wp:inDirection",
       "@type": "rdf:Property",
       "rdfs:comment": "Base direction of the publication and the infoset textual items",
@@ -97,11 +90,11 @@
       "rdfs:label": "Resource list"
     },
     {
-      "@id": "wp:totalDuration",
+      "@id": "wp:length",
       "@type": "rdf:Property",
-      "rdfs:comment": "Duration value for a time-based media resource",
+      "rdfs:comment": "The total length of a time-based media resource in (possibly fractional) seconds. ",
       "rdfs:isDefinedBy": "https://www.w3.org/TR/wpub/#linkedResource",
-      "rdfs:label": "Resource level duration"
+      "rdfs:label": "Resource level length"
     }
   ]
 }

@@ -78,11 +78,8 @@
         "inDirection": {
             "@id": "https://www.w3.org/ns/wp#inDirection"
         },
-        "globalDuration": {
-            "@id": "https://www.w3.org/ns/wp#globalDuration"
-        },
-        "totalDuration": {
-            "@id": "https://www.w3.org/ns/wp#totalDuration"
+        "length": {
+            "@id": "https://www.w3.org/ns/wp#length"
         },
         "id"       : "@id",
         "type"     : "@type",
