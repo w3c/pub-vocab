@@ -29,7 +29,12 @@
   </rdf:Property>
   <rdf:Property rdf:about="https://www.w3.org/ns/wp#length">
     <rdfs:label>Resource level length</rdfs:label>
-    <rdfs:comment>The total length of a time-based media resource in (possibly fractional) seconds. </rdfs:comment>
+    <rdfs:comment>The total length of a time-based media resource in (possibly fractional) seconds.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/wpub/#linkedResource"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="https://www.w3.org/ns/wp#integrity">
+    <rdfs:label>Resource integrity</rdfs:label>
+    <rdfs:comment>A cryptographic hashing of the resource that allows its integrity to be verified.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/wpub/#linkedResource"/>
   </rdf:Property>
   <rdf:Property rdf:about="https://www.w3.org/ns/wp#links">

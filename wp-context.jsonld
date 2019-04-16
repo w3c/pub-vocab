@@ -81,6 +81,9 @@
         "length": {
             "@id": "https://www.w3.org/ns/wp#length"
         },
+        "integrity": {
+            "@id": "https://www.w3.org/ns/wp#integrity"
+        },
         "id"       : "@id",
         "type"     : "@type",
         "value"    : "@value",

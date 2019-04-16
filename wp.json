@@ -92,9 +92,16 @@
     {
       "@id": "wp:length",
       "@type": "rdf:Property",
-      "rdfs:comment": "The total length of a time-based media resource in (possibly fractional) seconds. ",
+      "rdfs:comment": "The total length of a time-based media resource in (possibly fractional) seconds.",
       "rdfs:isDefinedBy": "https://www.w3.org/TR/wpub/#linkedResource",
       "rdfs:label": "Resource level length"
+    },
+    {
+      "@id": "wp:integrith",
+      "@type": "rdf:Property",
+      "rdfs:comment": "A cryptographic hashing of the resource that allows its integrity to be verified.",
+      "rdfs:isDefinedBy": "https://www.w3.org/TR/wpub/#linkedResource",
+      "rdfs:label": "Resource integrity"
     }
   ]
 }
