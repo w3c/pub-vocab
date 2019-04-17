@@ -6,6 +6,13 @@
 
 This is the repository for the Web Publication Manifest vocabulary and JSON-LD context files. It is adjunct to the work on Web Publications, developed by the [Publishing Working Group](https://www.w3.org/publishing/groups/publ-wg/).
 
+The vocabulary and context files in this repository are served via their canonical URL, based on `https://www.w3.org/ns/wp` and `https://www.w3.org/ns/wp-context`, respectively, using content negotiations. The HTTP requests are resolved to
+
+- `https://www.w3.org/ns/wp.{jsonld,json,rdf,ttl,html}` for the vocabulary
+- `https://www.w3.org/ns/wp-context.{json,jsonld}` for the JSON-LD context file
+
+depending on the accept header of the request.
+
 ## Contributing to the Repository
 
 Use the standard fork, branch, and pull request workflow to propose changes to the specification. Please make branch names informative—by including the issue or bug number for example.

@@ -1,7 +1,0 @@
-#!/bin/sh
-echo "Duplicating the json file to serve it in two different types"
-echo "Copying the files to /ns"
-cp wp.{html,json,rdf,ttl} wp-context.jsonld ~/W3C/WWW/ns/
-cp wp.json ~/W3C/WWW/ns/wp.jsonld
-echo "CVS commit"
-(cd ~/W3C/WWW/ns; cvs commit -m "" wp.* wp-context.jsonld)
