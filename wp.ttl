@@ -50,6 +50,16 @@ wp:rel a rdf:Property ;
 	rdfs:comment "Equivalent to the rel attribute in HTML; uses either the IANA link registry data, or specially minted URL-s." ;
 	rdfs:isDefinedBy <https://www.w3.org/TR/wpub/#linkedResource> .
 
+wp:length a rdf:Property ;
+	rdfs:label "Resource level length" ;
+	rdfs:comment "The total length of a time-based media resource in (possibly fractional) seconds." ;
+	rdfs:isDefinedBy <https://www.w3.org/TR/wpub/#linkedResource> .
+
+wp:integrity a rdf:Property ;
+	rdfs:label "Resource integrity" ;
+	rdfs:comment "A cryptographic hashing of the resource that allows its integrity to be verified." ;
+	rdfs:isDefinedBy <https://www.w3.org/TR/wpub/#linkedResource> .
+
 # Missing rel values; these may become obsolete at some point if the equivalents are accepted by IANA
 wp:cover a rdfs:Resource ;
 	rdfs:label "Rel value for a cover page" ;

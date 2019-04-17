@@ -52,7 +52,8 @@
             "@container": "@list",
             "@id": "https://schema.org/translator"
         },
-         "readingProgression": {
+        "encodingFormat" : "http://schema.org/encodingFormat",
+        "readingProgression": {
             "@id": "https://www.w3.org/ns/wp#readingProgression"
         },
         "readingOrder": {
@@ -77,7 +78,12 @@
         "inDirection": {
             "@id": "https://www.w3.org/ns/wp#inDirection"
         },
-        "encodingFormat" : "http://schema.org/encodingFormat",
+        "length": {
+            "@id": "https://www.w3.org/ns/wp#length"
+        },
+        "integrity": {
+            "@id": "https://www.w3.org/ns/wp#integrity"
+        },
         "id"       : "@id",
         "type"     : "@type",
         "value"    : "@value",
