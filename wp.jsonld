@@ -25,7 +25,7 @@
       "rdfs:comment": "Terms defined by the Publishing Working Group, to be used by the Web Publication Manifest",
       "rdfs:seeAlso": "https://www.w3.org/TR/wpub/",
       "schema:creator": "https://www.ivan-herman.net/foaf#me",
-      "schema:dateModified": "2018-06-20",
+      "schema:dateModified": "2019-04-17",
       "schema:title": "Web Publication Manifest Ontology"
     },
     {
@@ -97,7 +97,7 @@
       "rdfs:label": "Resource level length"
     },
     {
-      "@id": "wp:integrith",
+      "@id": "wp:integrity",
       "@type": "rdf:Property",
       "rdfs:comment": "A cryptographic hashing of the resource that allows its integrity to be verified.",
       "rdfs:isDefinedBy": "https://www.w3.org/TR/wpub/#linkedResource",

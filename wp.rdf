@@ -9,7 +9,7 @@
     <schema:creator rdf:resource="https://www.ivan-herman.net/foaf#me"/>
     <rdfs:comment>Terms defined by the Publishing Working Group, to be used by the Web Publication Manifest</rdfs:comment>
     <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/wpub/"/>
-    <schema:dateModified>2018-06-20</schema:dateModified>
+    <schema:dateModified>2019-07-17</schema:dateModified>
     <schema:title>Web Publication Manifest Ontology</schema:title>
   </owl:Ontology>
   <rdf:Property rdf:about="https://www.w3.org/ns/wp#readingProgression">

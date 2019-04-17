@@ -9,7 +9,7 @@
 wp: a owl:Ontology ;
     schema:title "Web Publication Manifest Ontology" ;
     schema:creator <https://www.ivan-herman.net/foaf#me> ;
-    schema:dateModified "2018-06-20" ;
+    schema:dateModified "2019-04-17" ;
     rdfs:comment "Terms defined by the Publishing Working Group, to be used by the Web Publication Manifest" ;
     rdfs:seeAlso <https://www.w3.org/TR/wpub/> .
 
