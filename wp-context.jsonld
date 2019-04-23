@@ -30,7 +30,7 @@
         },
         "inker": {
             "@container": "@list",
-            "@id": "https://schema.org/illustrator"
+            "@id": "https://schema.org/inker"
         },
         "letterer": {
             "@container": "@list",
