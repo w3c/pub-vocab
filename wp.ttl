@@ -60,13 +60,4 @@ wp:integrity a rdf:Property ;
 	rdfs:comment "A cryptographic hashing of the resource that allows its integrity to be verified." ;
 	rdfs:isDefinedBy <https://www.w3.org/TR/wpub/#linkedResource> .
 
-# Missing rel values; these may become obsolete at some point if the equivalents are accepted by IANA
-wp:cover a rdfs:Resource ;
-	rdfs:label "Rel value for a cover page" ;
-	rdfs:isDefinedBy <https://www.w3.org/TR/wpub/#wp-cover> .
-
-wp:accessibility-report a rdfs:Resource ;
-	rdfs:label "Rel value for an accessibility report" ;
-	rdfs:isDefinedBy <https://www.w3.org/TR/wpub/#wp-a11y> .
-
 
