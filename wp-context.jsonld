@@ -58,14 +58,17 @@
         },
         "readingOrder": {
             "@container": "@list",
+            "@type" : "@id",
             "@id": "https://www.w3.org/ns/wp#readingOrder"
         },
         "resources": {
             "@container": "@set",
+            "@type" : "@id",
             "@id": "https://www.w3.org/ns/wp#resources"
         },
         "links": {
             "@container": "@set",
+            "@type" : "@id",
             "@id": "https://www.w3.org/ns/wp#links"
         },
         "LinkedResource": {
