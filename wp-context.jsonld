@@ -1,5 +1,21 @@
 {
     "@context": {
+        "accessMode" : {
+            "@id" : "https://schema.org/accessMode",
+            "@language": null
+        },
+        "accessModeSufficient": {
+            "@id" : "https://schema.org/accessModeSufficient",
+            "@language": null
+        },
+        "accessibilityFeature": {
+            "@id" : "https://schema.org/accessibilityFeature",
+            "@language": null
+        },
+        "accessibilityHazard": {
+            "@id" : "https://schema.org/accessibilityHazard",
+            "@language": null
+        },
         "artist": {
             "@container": "@list",
             "@id": "https://schema.org/artist"
@@ -52,7 +68,14 @@
             "@container": "@list",
             "@id": "https://schema.org/translator"
         },
-        "encodingFormat" : "http://schema.org/encodingFormat",
+        "duration" : {
+            "@language" : null,
+            "@id" : "http://schema.org/duration"
+        },
+        "encodingFormat" : {
+            "@language" : null,
+            "@id" : "http://schema.org/encodingFormat"
+        },
         "readingProgression": {
             "@id": "https://www.w3.org/ns/wp#readingProgression"
         },
@@ -75,16 +98,20 @@
             "@id": "https://www.w3.org/ns/wp#LinkedResource"
         },
         "rel": {
+            "@language" : null,
             "@container": "@set",
             "@id": "https://www.w3.org/ns/wp#rel"
         },
         "inDirection": {
+            "@language" : null,
             "@id": "https://www.w3.org/ns/wp#inDirection"
         },
         "length": {
+            "@type": "xsd:double",
             "@id": "https://www.w3.org/ns/wp#length"
         },
         "integrity": {
+            "@language" : null,
             "@id": "https://www.w3.org/ns/wp#integrity"
         },
         "id"       : "@id",
