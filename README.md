@@ -1,13 +1,13 @@
 ![W3C Logo](https://www.w3.org/Icons/w3c_home)
 
-# Vocabulary for Web Publications Manifest
+# Vocabulary for the Publications Manifest
 
-This is the repository for the Web Publication Manifest vocabulary and JSON-LD context files. It is adjunct to the work on Web Publications, developed by the [Publishing Working Group](https://www.w3.org/publishing/groups/publ-wg/).
+This is the repository for the Publication Manifest vocabulary and JSON-LD context files. It is adjunct to the work on Publication Manifests, developed by the [Publishing Working Group](https://www.w3.org/publishing/groups/publ-wg/).
 
-The vocabulary and context files in this repository are served via their canonical URL, based on `https://www.w3.org/ns/wp` and `https://www.w3.org/ns/wp-context`, respectively, using content negotiations. The HTTP requests are resolved to
+The vocabulary and context files in this repository are served via their canonical URL, based on `https://www.w3.org/ns/pub` and `https://www.w3.org/ns/pub-context`, respectively, using content negotiations. The HTTP requests are resolved to
 
-- `https://www.w3.org/ns/wp.{jsonld,json,rdf,ttl,html}` for the vocabulary
-- `https://www.w3.org/ns/wp-context.{json,jsonld}` for the JSON-LD context file
+- `https://www.w3.org/ns/pub.{jsonld,json,rdf,ttl,html}` for the vocabulary
+- `https://www.w3.org/ns/pub-context.{json,jsonld}` for the JSON-LD context file
 
 depending on the accept header of the request.
 
