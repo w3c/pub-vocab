@@ -21,7 +21,7 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md), about licensing contributions.
 
 ## Final locations of the documents
 
-These files are _not_ aimed to be part of a W3C Technical Report. Instead, the `wp.*` and `wp-context.*` files are meant to be copied to the `https://www.w3.org/ns/` directory (which can only be done by a W3C staff member).
+These files are _not_ aimed to be part of a W3C Technical Report. Instead, the `pub.*` and `pub-context.*` files are meant to be copied to the `https://www.w3.org/ns/` directory (which can only be done by a W3C staff member).
 
 ## Code of Conduct
 

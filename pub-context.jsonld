@@ -77,42 +77,42 @@
             "@id" : "http://schema.org/encodingFormat"
         },
         "readingProgression": {
-            "@id": "https://www.w3.org/ns/wp#readingProgression"
+            "@id": "https://www.w3.org/ns/pub#readingProgression"
         },
         "readingOrder": {
             "@container": "@list",
             "@type" : "@id",
-            "@id": "https://www.w3.org/ns/wp#readingOrder"
+            "@id": "https://www.w3.org/ns/pub#readingOrder"
         },
         "resources": {
             "@container": "@set",
             "@type" : "@id",
-            "@id": "https://www.w3.org/ns/wp#resources"
+            "@id": "https://www.w3.org/ns/pub#resources"
         },
         "links": {
             "@container": "@set",
             "@type" : "@id",
-            "@id": "https://www.w3.org/ns/wp#links"
+            "@id": "https://www.w3.org/ns/pub#links"
         },
         "LinkedResource": {
-            "@id": "https://www.w3.org/ns/wp#LinkedResource"
+            "@id": "https://www.w3.org/ns/pub#LinkedResource"
         },
         "rel": {
             "@language" : null,
             "@container": "@set",
-            "@id": "https://www.w3.org/ns/wp#rel"
+            "@id": "https://www.w3.org/ns/pub#rel"
         },
         "inDirection": {
             "@language" : null,
-            "@id": "https://www.w3.org/ns/wp#inDirection"
+            "@id": "https://www.w3.org/ns/pub#inDirection"
         },
         "length": {
             "@type": "xsd:double",
-            "@id": "https://www.w3.org/ns/wp#length"
+            "@id": "https://www.w3.org/ns/pub#length"
         },
         "integrity": {
             "@language" : null,
-            "@id": "https://www.w3.org/ns/wp#integrity"
+            "@id": "https://www.w3.org/ns/pub#integrity"
         },
         "id"       : "@id",
         "type"     : "@type",

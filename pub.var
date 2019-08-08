@@ -1,16 +1,16 @@
-URI: wp
+URI: pub
 
-URI: wp.html
+URI: pub.html
 Content-Type: text/html
 
-URI: wp.ttl
+URI: pub.ttl
 Content-Type: text/turtle; qs=0.6
 
-URI: wp.jsonld
+URI: pub.jsonld
 Content-Type: application/ld+json; qs=0.5
 
-URI: wp.rdf
+URI: pub.rdf
 Content-Type: application/rdf+xml; qs=0.4
 
-URI: wp.json
+URI: pub.json
 Content-Type: application/json; qs=0.3

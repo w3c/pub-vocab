@@ -1,0 +1,95 @@
+{
+  "@context": {
+    "pub": "https://www.w3.org/ns/pub#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "schema": "https://schema.org/",
+    "rdfs": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    "rdfs:isDefinedBy": {
+      "@type": "@id"
+    },
+    "rdfs:seeAlso": {
+      "@type": "@id"
+    },
+    "schema:creator": {
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://www.w3.org/ns/pub#",
+      "@type": "owl:Ontology",
+      "rdfs:comment": "Terms defined by the Publishing Working Group, to be used by the Publication Manifest",
+      "rdfs:seeAlso": "https://www.w3.org/TR/pub-manifest/",
+      "schema:creator": "https://www.ivan-herman.net/foaf#me",
+      "schema:dateModified": "2019-04-17",
+      "schema:title": "Publication Manifest Ontology"
+    },
+    {
+      "@id": "pub:LinkedResource",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "General type used for resources linked from the manifest.",
+      "rdfs:isDefinedBy": "https://www.w3.org/TR/pub-manifest/#linkedResource",
+      "rdfs:label": "General type used for resources linked from the manifest."
+    },
+    {
+      "@id": "pub:inDirection",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Base direction of the publication and the infoset textual items",
+      "rdfs:isDefinedBy": "https://www.w3.org/TR/pub-manifest/#manifest-default-language-and-dir",
+      "rdfs:label": "Base direction"
+    },
+    {
+      "@id": "pub:links",
+      "@type": "rdf:Property",
+      "rdfs:comment": "The list of extra resources enumerates all resources that are used in the processing and rendering of a Publication but are not within its bounds (i.e., are not listed in the default reading order or the resource list) but are, rather, external to the Publication.",
+      "rdfs:isDefinedBy": "https://www.w3.org/TR/pub-manifest/#links",
+      "rdfs:label": "List of extra resources"
+    },
+    {
+      "@id": "pub:readingOrder",
+      "@type": "rdf:Property",
+      "rdfs:comment": "The default reading order is a specific progression through a set of Publication resources.",
+      "rdfs:isDefinedBy": "https://www.w3.org/TR/pub-manifest/#default-reading-order",
+      "rdfs:label": "Default reading order"
+    },
+    {
+      "@id": "pub:readingProgression",
+      "@type": "rdf:Property",
+      "rdfs:comment": "The reading progression establishes the reading direction from one resource to the next within a Publication.",
+      "rdfs:isDefinedBy": "https://www.w3.org/TR/pub-manifest/#reading-progression",
+      "rdfs:label": "Reading progression direction"
+    },
+    {
+      "@id": "pub:rel",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Equivalent to the rel attribute in HTML; uses either the IANA link registry data, or specially minted URL-s.",
+      "rdfs:isDefinedBy": "https://www.w3.org/TR/pub-manifest/#linkedResource",
+      "rdfs:label": "Relation type"
+    },
+    {
+      "@id": "pub:resources",
+      "@type": "rdf:Property",
+      "rdfs:comment": "The resource list enumerates all resources that are used in the processing and rendering of a Publication (i.e., that are within its bounds) and that are not listed in the default reading order.",
+      "rdfs:isDefinedBy": "https://www.w3.org/TR/pub-manifest/#resource-list",
+      "rdfs:label": "Resource list"
+    },
+    {
+      "@id": "pub:length",
+      "@type": "rdf:Property",
+      "rdfs:comment": "The total length of a time-based media resource in (possibly fractional) seconds.",
+      "rdfs:isDefinedBy": "https://www.w3.org/TR/pub-manifest/#linkedResource",
+      "rdfs:label": "Resource level length"
+    },
+    {
+      "@id": "pub:integrity",
+      "@type": "rdf:Property",
+      "rdfs:comment": "A cryptographic hashing of the resource that allows its integrity to be verified.",
+      "rdfs:isDefinedBy": "https://www.w3.org/TR/pub-manifest/#linkedResource",
+      "rdfs:label": "Resource integrity"
+    }
+  ]
+}

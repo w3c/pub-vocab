@@ -1,6 +1,6 @@
-<!DOCTYPE html><html lang="en" data-lt-installed="true"><head><meta charset="utf-8"><meta name="generator" content="ReSpec 24.16.1"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html><html lang="en" data-lt-installed="true"><head><meta charset="utf-8"><meta name="generator" content="ReSpec 24.29.0"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <title>Web Publication Manifest Vocabulary</title>
+    <title>Publication Manifest Vocabulary</title>
     
     
     <style type="text/css">
@@ -66,24 +66,18 @@ a.bibref {
   animation: pop 0.25s ease-in-out 0s 1;
 }
 
-/* TODO: Remove once https://github.com/w3c/tr-design/pull/176 is merged. */
-.respec-offending-element a[href] {
-  margin: 0;
+.respec-offending-element,
+a[href].respec-offending-element {
+  text-decoration: red wavy underline;
 }
-
-.respec-offending-element {
-  display: inline-block;
-  position: relative;
-  /* Red squiggly line */
-  background: url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=)
-    bottom repeat-x;
-}
-@supports (text-decoration-style: wavy) {
+@supports not (text-decoration: red wavy underline) {
+  .respec-offending-element:not(pre) {
+    display: inline-block;
+  }
   .respec-offending-element {
-    background: none;
-    text-decoration-line: underline;
-    text-decoration-style: wavy;
-    text-decoration-color: red;
+    /* Red squiggly line */
+    background: url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=)
+      bottom repeat-x;
   }
 }
 
@@ -296,7 +290,52 @@ h6 > a.self-link::before {
     display: none;
   }
 }
-</style><link rel="canonical" href="https://www.w3.org/TR/wp-vocab/"><script id="initialUserConfig" type="application/json">{
+</style><link rel="canonical" href="https://www.w3.org/TR/pub-vocab/"><style>var {
+  position: relative;
+  cursor: pointer;
+}
+
+var[data-type]::before,
+var[data-type]::after {
+  position: absolute;
+  left: 50%;
+  top: -6px;
+  opacity: 0;
+  transition: opacity 0.4s;
+  pointer-events: none;
+}
+
+/* the triangle or arrow or caret or whatever */
+var[data-type]::before {
+  content: "";
+  transform: translateX(-50%);
+  border-width: 4px 6px 0 6px;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: #000;
+}
+
+/* actual text */
+var[data-type]::after {
+  content: attr(data-type);
+  transform: translateX(-50%) translateY(-100%);
+  background: #000;
+  text-align: center;
+  /* additional styling */
+  font-family: "Dank Mono", "Fira Code", monospace;
+  font-style: normal;
+  padding: 6px;
+  border-radius: 3px;
+  color: #daca88;
+  text-indent: 0;
+  font-weight: normal;
+}
+
+var[data-type]:hover::after,
+var[data-type]:hover::before {
+  opacity: 1;
+}
+</style><script id="initialUserConfig" type="application/json">{
   "specStatus": "base",
   "edDraftURI": "https://w3c.github.io/wp-vocab/",
   "wg": "Publishing Working Group",
@@ -320,19 +359,19 @@ h6 > a.self-link::before {
   "wgPublicList": "public-publ-wg",
   "wgPatentURI": "https://www.w3.org/2004/01/pp-impl/100074/status",
   "github": {
-    "repoURL": "https://github.com/w3c/wp-vocab/",
+    "repoURL": "https://github.com/w3c/pub-vocab/",
     "branch": "master"
   },
-  "publishISODate": "2019-04-17T00:00:00.000Z",
-  "generatedSubtitle": "Document 17 April 2019"
-}</script><meta name="description" content="Vocabulary document, specified by the W3C Publishing Working Group, defining the classes, properties, and individuals to be used by the Web Publication Manifest."><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/base.css"></head>
+  "publishISODate": "2019-08-08T00:00:00.000Z",
+  "generatedSubtitle": "Document 08 August 2019"
+}</script><meta name="description" content="Vocabulary document, specified by the W3C Publishing Working Group, defining the classes, properties, and individuals to be used by the Publication Manifest."><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/base.css"></head>
 
 <body class="h-entry informative"><div class="head">
-      <a class="logo" href="https://www.w3.org/"><img alt="W3C" width="72" height="48" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C"></a> <h1 id="title" class="title p-name">Web Publication Manifest Vocabulary</h1>
+      <a class="logo" href="https://www.w3.org/"><img alt="W3C" width="72" height="48" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C"></a> <h1 id="title" class="title p-name">Publication Manifest Vocabulary</h1>
       
       <h2>
         W3C Document
-        <time class="dt-published" datetime="2019-04-17">17 April 2019</time>
+        <time class="dt-published" datetime="2019-08-08">08 August 2019</time>
       </h2>
       <dl>
         
@@ -357,13 +396,13 @@ h6 > a.self-link::before {
         
         
         <dt>Participate:</dt><dd>
-      <a href="https://github.com/w3c/wp-vocab/">GitHub w3c/wp-vocab</a>
+      <a href="https://github.com/w3c/pub-vocab/">GitHub w3c/pub-vocab</a>
     </dd><dd>
-      <a href="https://github.com/w3c/wp-vocab/issues/">File a bug</a>
+      <a href="https://github.com/w3c/pub-vocab/issues/">File a bug</a>
     </dd><dd>
-      <a href="https://github.com/w3c/wp-vocab/commits/master">Commit history</a>
+      <a href="https://github.com/w3c/pub-vocab/commits/master">Commit history</a>
     </dd><dd>
-      <a href="https://github.com/w3c/wp-vocab/pulls/">Pull requests</a>
+      <a href="https://github.com/w3c/pub-vocab/pulls/">Pull requests</a>
     </dd>
       </dl>
       
@@ -384,22 +423,22 @@ h6 > a.self-link::before {
       <hr title="Separator for header">
     </div>
     <section id="abstract" class="introductory"><h2>Abstract</h2>
-        <p>Vocabulary document, specified by the <a href="https://www.w3.org/publishing/groups/publ-wg"><abbr title="World Wide Web Consortium">W3C</abbr> Publishing Working Group</a>, defining the classes, properties, and individuals to be used by the <a href="https://www.w3.org/TR/wpub/">Web Publication Manifest</a>.</p>
+        <p>Vocabulary document, specified by the <a href="https://www.w3.org/publishing/groups/publ-wg"><abbr title="World Wide Web Consortium">W3C</abbr> Publishing Working Group</a>, defining the classes, properties, and individuals to be used by the <a href="https://www.w3.org/TR/pub-manifest/">Publication Manifest</a>.</p>
     </section>
     <section id="sotd" class="introductory"><h2>Status of This Document</h2><p>
       This document is merely a <abbr title="World Wide Web Consortium">W3C</abbr>-internal
        document. It has no official standing
       of any kind and does not represent consensus of the <abbr title="World Wide Web Consortium">W3C</abbr> Membership.
     </p>
-        <p>This is a vocabulary specification for the <a href="https://www.w3.org/TR/wpub/">Web Publication Manifest</a>, defined by the <a href="https://www.w3.org/publishing/groups/publ-wg"><abbr title="World Wide Web Consortium">W3C</abbr> Publishing Working Group</a>. The formal specifications of the terms, their usage, etc., are normatively defined by the specification for <a href="https://www.w3.org/TR/wpub/">Web Publications</a>.
-    </p></section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#available-representations"><span class="secno">1. </span>Available representations</a></li></ol></nav>
+        <p>This is a vocabulary specification for the <a href="https://www.w3.org/TR/pub-manifest/">Publication Manifest</a>, defined by the <a href="https://www.w3.org/publishing/groups/publ-wg"><abbr title="World Wide Web Consortium">W3C</abbr> Publishing Working Group</a>. The formal specifications of the terms, their usage, etc., are normatively defined by the specification for <a href="https://www.w3.org/TR/pub-manifest/">Publication Manifest</a>.
+    </p></section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#available-representations"><bdi class="secno">1. </bdi>Available representations</a></li></ol></nav>
     <section id="available-representations">
-        <!--OddPage--><h2 id="x1-available-representations"><span class="secno">1. </span>Available representations<a class="self-link" aria-label="§" href="#available-representations"></a></h2>
+        <h2 id="x1-available-representations"><bdi class="secno">1. </bdi>Available representations<a class="self-link" aria-label="§" href="#available-representations"></a></h2>
         <ul>
-            <li><a href="https://www.w3.org/TR/wpub">Vocabulary documentation</a></li>
-            <li><a href="https://www.w3.org/ns/wp.ttl">Vocabulary in Turtle</a></li>
-            <li><a href="https://www.w3.org/ns/wp.jsonld">Vocabulary in JSON-LD</a></li>
-            <li><a href="https://www.w3.org/ns/wp.rdf">Vocabulary in RDF/XML</a></li>
+            <li><a href="https://www.w3.org/TR/pub">Vocabulary documentation</a></li>
+            <li><a href="https://www.w3.org/ns/pub.ttl">Vocabulary in Turtle</a></li>
+            <li><a href="https://www.w3.org/ns/pub.jsonld">Vocabulary in JSON-LD</a></li>
+            <li><a href="https://www.w3.org/ns/pub.rdf">Vocabulary in RDF/XML</a></li>
         </ul>
     </section>
 
