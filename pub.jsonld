@@ -50,6 +50,13 @@
       "rdfs:label": "List of extra resources"
     },
     {
+      "@id": "pub:pubLanguages",
+      "@type": "rdf:Property",
+      "rdfs:comment": "The language, or languages, of the publication.",
+      "rdfs:isDefinedBy": "https://www.w3.org/TR/pub-manifest/#publication-language",
+      "rdfs:label": "Publication Language(s)"
+    },
+    {
       "@id": "pub:readingOrder",
       "@type": "rdf:Property",
       "rdfs:comment": "The default reading order is a specific progression through a set of Publication resources.",

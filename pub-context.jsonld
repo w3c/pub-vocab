@@ -114,6 +114,11 @@
             "@language" : null,
             "@id": "https://www.w3.org/ns/pub#integrity"
         },
+        "pubLanguage": {
+            "@language": null,
+            "@id": "https://www.w3.org/ns/pub#pubLanguage",
+            "@container" : "@list"
+        }
         "id"       : "@id",
         "type"     : "@type",
         "value"    : "@value",

@@ -22,8 +22,13 @@
     <rdfs:label>Relation type</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/pub-manifest/#linkedResource"/>
   </rdf:Property>
+  <rdf:Property rdf:about="https://www.w3.org/ns/pub#publLanguage">
+    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/pub-manifest/#publication-language"/>
+    <rdfs:comment>The language, or languages, of the publication.</rdfs:comment>
+    <rdfs:label>Publication Language(s)</rdfs:label>
+  </rdf:Property>
   <rdf:Property rdf:about="https://www.w3.org/ns/pub#readingOrder">
-    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/pub-manifest/default-reading-order"/>
+    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/pub-manifest/#default-reading-order"/>
     <rdfs:comment>The default reading order is a specific progression through a set of Publication resources.</rdfs:comment>
     <rdfs:label>Default reading order</rdfs:label>
   </rdf:Property>
