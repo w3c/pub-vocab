@@ -50,7 +50,7 @@
       "rdfs:label": "List of extra resources"
     },
     {
-      "@id": "pub:pubLanguages",
+      "@id": "pub:pubLanguage",
       "@type": "rdf:Property",
       "rdfs:comment": "The language, or languages, of the publication.",
       "rdfs:isDefinedBy": "https://www.w3.org/TR/pub-manifest/#publication-language",
