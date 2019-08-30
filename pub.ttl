@@ -26,9 +26,14 @@ pub:readingOrder a rdf:Property ;
 	rdfs:isDefinedBy <https://www.w3.org/TR/pub-manifest/#default-reading-order> .
 
 pub:inDirection a rdf:Property ;
-	rdfs:label "Base direction" ;
-	rdfs:comment "Base direction of the publication and the infoset textual items" ;
-	rdfs:isDefinedBy <https://www.w3.org/TR/pub-manifest/#manifest-default-language-and-dir> .
+	rdfs:label "Publication base direction" ;
+	rdfs:comment "Base direction of the publication" ;
+	rdfs:isDefinedBy <https://www.w3.org/TR/pub-manifest/#language-and-dir> .
+
+pub:direction a rdf:Property ;
+	rdfs:label "Base direction for textual items" ;
+	rdfs:comment "Base direction for textual items" ;
+	rdfs:isDefinedBy <https://www.w3.org/TR/pub-manifest/#manifest-lang-dir> .
 
 pub:resources a rdf:Property ;
 	rdfs:label "Resource list" ;
