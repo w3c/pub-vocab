@@ -37,6 +37,7 @@
             "@id": "https://schema.org/creator"
         },
         "direction": {
+            "@language" : null,
             "@id": "https://www.w3.org/ns/pub#direction"
         },
         "duration" : {
@@ -99,9 +100,6 @@
         "readBy": {
             "@container": "@list",
             "@id": "https://schema.org/readBy"
-        },
-        "readingProgression": {
-            "@id": "https://www.w3.org/ns/pub#readingProgression"
         },
         "readingOrder": {
             "@container": "@list",
