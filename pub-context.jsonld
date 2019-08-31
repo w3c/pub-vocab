@@ -52,6 +52,10 @@
             "@language" : null,
             "@id" : "http://schema.org/encodingFormat"
         },
+        "identifier": {
+            "@language" : null,
+            "@id": "https://schema.org/identifier"
+        },
         "illustrator": {
             "@container": "@list",
             "@id": "https://schema.org/illustrator"
