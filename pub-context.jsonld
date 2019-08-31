@@ -36,21 +36,58 @@
             "@container": "@list",
             "@id": "https://schema.org/creator"
         },
+        "direction": {
+            "@language" : null,
+            "@id": "https://www.w3.org/ns/pub#direction"
+        },
+        "duration" : {
+            "@language" : null,
+            "@id" : "http://schema.org/duration"
+        },
         "editor": {
             "@container": "@list",
             "@id": "https://schema.org/editor"
+        },
+        "encodingFormat" : {
+            "@language" : null,
+            "@id" : "http://schema.org/encodingFormat"
         },
         "illustrator": {
             "@container": "@list",
             "@id": "https://schema.org/illustrator"
         },
+        "inDirection": {
+            "@language" : null,
+            "@id": "https://www.w3.org/ns/pub#inDirection"
+        },
         "inker": {
             "@container": "@list",
             "@id": "https://schema.org/inker"
         },
+        "integrity": {
+            "@language" : null,
+            "@id": "https://www.w3.org/ns/pub#integrity"
+        },
+        "inLanguage": {
+            "@language" : null,
+            "@container": "@list",
+            "@id": "http://schema.org/inDirection"
+        },
         "letterer": {
             "@container": "@list",
             "@id": "https://schema.org/letterer"
+        },
+        "length": {
+            "@type": "xsd:double",
+            "@id": "https://www.w3.org/ns/pub#length"
+        },
+        "links": {
+            "@container": "@set",
+            "@type" : "@id",
+            "@id": "https://www.w3.org/ns/pub#links"
+        },
+        "LinkedResource": {
+            "@id": "https://www.w3.org/ns/pub#LinkedResource"
         },
         "penciler": {
             "@container": "@list",
@@ -64,21 +101,6 @@
             "@container": "@list",
             "@id": "https://schema.org/readBy"
         },
-        "translator": {
-            "@container": "@list",
-            "@id": "https://schema.org/translator"
-        },
-        "duration" : {
-            "@language" : null,
-            "@id" : "http://schema.org/duration"
-        },
-        "encodingFormat" : {
-            "@language" : null,
-            "@id" : "http://schema.org/encodingFormat"
-        },
-        "readingProgression": {
-            "@id": "https://www.w3.org/ns/pub#readingProgression"
-        },
         "readingOrder": {
             "@container": "@list",
             "@type" : "@id",
@@ -89,30 +111,14 @@
             "@type" : "@id",
             "@id": "https://www.w3.org/ns/pub#resources"
         },
-        "links": {
-            "@container": "@set",
-            "@type" : "@id",
-            "@id": "https://www.w3.org/ns/pub#links"
-        },
-        "LinkedResource": {
-            "@id": "https://www.w3.org/ns/pub#LinkedResource"
-        },
         "rel": {
             "@language" : null,
             "@container": "@set",
             "@id": "https://www.w3.org/ns/pub#rel"
         },
-        "inDirection": {
-            "@language" : null,
-            "@id": "https://www.w3.org/ns/pub#inDirection"
-        },
-        "length": {
-            "@type": "xsd:double",
-            "@id": "https://www.w3.org/ns/pub#length"
-        },
-        "integrity": {
-            "@language" : null,
-            "@id": "https://www.w3.org/ns/pub#integrity"
+        "translator": {
+            "@container": "@list",
+            "@id": "https://schema.org/translator"
         },
         "id"       : "@id",
         "type"     : "@type",

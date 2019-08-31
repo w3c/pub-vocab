@@ -15,20 +15,20 @@ pub: a owl:Ontology ;
 
 
 # Terms not defined by schema.org but necessary for Publication Manifests
-pub:readingProgression a rdf:Property ;
-	rdfs:label "Reading progression direction" ;
-	rdfs:comment "The reading progression establishes the reading direction from one resource to the next within a Publication." ;
-	rdfs:isDefinedBy <https://www.w3.org/TR/pub-manifest/#reading-progression> .
-
 pub:readingOrder a rdf:Property ;
 	rdfs:label "Default reading order" ;
 	rdfs:comment "The default reading order is a specific progression through a set of Publication resources." ;
 	rdfs:isDefinedBy <https://www.w3.org/TR/pub-manifest/#default-reading-order> .
 
 pub:inDirection a rdf:Property ;
-	rdfs:label "Base direction" ;
-	rdfs:comment "Base direction of the publication and the infoset textual items" ;
-	rdfs:isDefinedBy <https://www.w3.org/TR/pub-manifest/#manifest-default-language-and-dir> .
+	rdfs:label "Publication base direction" ;
+	rdfs:comment "Base direction of the publication" ;
+	rdfs:isDefinedBy <https://www.w3.org/TR/pub-manifest/#language-and-dir> .
+
+pub:direction a rdf:Property ;
+	rdfs:label "Base direction for textual items" ;
+	rdfs:comment "Base direction for textual items" ;
+	rdfs:isDefinedBy <https://www.w3.org/TR/pub-manifest/#manifest-lang-dir> .
 
 pub:resources a rdf:Property ;
 	rdfs:label "Resource list" ;
