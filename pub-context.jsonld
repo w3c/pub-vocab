@@ -60,10 +60,6 @@
             "@container": "@list",
             "@id": "https://schema.org/illustrator"
         },
-        "inDirection": {
-            "@language" : null,
-            "@id": "https://www.w3.org/ns/pub#inDirection"
-        },
         "inker": {
             "@container": "@list",
             "@id": "https://schema.org/inker"
