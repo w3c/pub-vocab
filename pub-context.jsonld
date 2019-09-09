@@ -17,7 +17,7 @@
             "@language": null
         },
         "alternate": {
-            "@container": "@list",
+            "@container": "@set",
             "@type" : "@id",
             "@id": "https://www.w3.org/ns/pub#alternate"
         },
