@@ -39,8 +39,14 @@
   
   <rdf:Property rdf:about="https://www.w3.org/ns/pub#links">
     <rdfs:comment>The list of extra resources enumerates all resources that are used in the processing and rendering of a Publication but are not within its bounds (i.e., are not listed in the default reading order or the resource list) but are, rather, external to the Publication.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/pub-manifest/#links"/>
+    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/pub-manifest/#linkedResource"/>
     <rdfs:label>List of extra resources</rdfs:label>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="https://www.w3.org/ns/pub#alternate">
+    <rdfs:comment>References to one or more reformulation(s) of the resource in alternative formats</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/pub-manifest/#links"/>
+    <rdfs:label>Alternative formats</rdfs:label>
   </rdf:Property>
 
   <rdf:Property rdf:about="https://www.w3.org/ns/pub#resources">

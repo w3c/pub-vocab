@@ -16,6 +16,11 @@
             "@id" : "https://schema.org/accessibilityHazard",
             "@language": null
         },
+        "alternate": {
+            "@container": "@set",
+            "@type" : "@id",
+            "@id": "https://www.w3.org/ns/pub#alternate"
+        },
         "artist": {
             "@container": "@list",
             "@id": "https://schema.org/artist"

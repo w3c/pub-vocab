@@ -50,6 +50,13 @@
             "rdfs:label": "List of extra resources"
         },
         {
+            "@id": "pub:alternate",
+            "@type": "rdf:Property",
+            "rdfs:comment": "References to one or more reformulation(s) of the resource in alternative formats",
+            "rdfs:isDefinedBy": "https://www.w3.org/TR/pub-manifest/#linkedResource",
+            "rdfs:label": "Alternative formats"
+        },
+        {
             "@id": "pub:readingOrder",
             "@type": "rdf:Property",
             "rdfs:comment": "The default reading order is a specific progression through a set of Publication resources.",
