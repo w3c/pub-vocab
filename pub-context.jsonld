@@ -33,6 +33,11 @@
             "@container": "@list",
             "@id": "https://schema.org/contributor"
         },
+        "conformsTo": {
+            "@container": "@list",
+            "@language": null,
+            "@id": "http://purl.org/dc/terms/conformsTo"
+        },
         "colorist": {
             "@container": "@list",
             "@id": "https://schema.org/colorist"
