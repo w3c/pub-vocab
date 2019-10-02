@@ -46,10 +46,6 @@
             "@container": "@list",
             "@id": "https://schema.org/creator"
         },
-        "direction": {
-            "@language" : null,
-            "@id": "https://www.w3.org/ns/pub#direction"
-        },
         "duration" : {
             "@language" : null,
             "@id" : "http://schema.org/duration"
