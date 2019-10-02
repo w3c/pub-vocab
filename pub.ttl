@@ -20,11 +20,6 @@ pub:readingOrder a rdf:Property ;
 	rdfs:comment "The default reading order is a specific progression through a set of Publication resources." ;
 	rdfs:isDefinedBy <https://www.w3.org/TR/pub-manifest/#default-reading-order> .
 
-pub:direction a rdf:Property ;
-	rdfs:label "Base direction for textual items" ;
-	rdfs:comment "Base direction for textual items" ;
-	rdfs:isDefinedBy <https://www.w3.org/TR/pub-manifest/#manifest-lang-dir> .
-
 pub:resources a rdf:Property ;
 	rdfs:label "Resource list" ;
 	rdfs:comment "The resource list enumerates all resources that are used in the processing and rendering of a Publication (i.e., that are within its bounds) and that are not listed in the default reading order." ;
