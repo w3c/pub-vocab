@@ -2,23 +2,19 @@
     "@context": {
         "accessMode" : {
             "@id" : "https://schema.org/accessMode",
-            "@language": null,
-            "@direction": null
+            "@language": null
         },
         "accessModeSufficient": {
             "@id" : "https://schema.org/accessModeSufficient",
-            "@language": null,
-            "@direction": null
+            "@language": null
         },
         "accessibilityFeature": {
             "@id" : "https://schema.org/accessibilityFeature",
-            "@language": null,
-            "@direction": null
+            "@language": null
         },
         "accessibilityHazard": {
             "@id" : "https://schema.org/accessibilityHazard",
-            "@language": null,
-            "@direction": null
+            "@language": null
         },
         "alternate": {
             "@container": "@set",
@@ -38,9 +34,8 @@
             "@id": "https://schema.org/contributor"
         },
         "conformsTo": {
-            "@container": "@set",
+            "@container": "@list",
             "@language": null,
-            "@direction": null,
             "@id": "http://purl.org/dc/terms/conformsTo"
         },
         "colorist": {
@@ -53,7 +48,6 @@
         },
         "duration" : {
             "@language" : null,
-            "@direction": null,
             "@id" : "http://schema.org/duration"
         },
         "editor": {
@@ -62,12 +56,10 @@
         },
         "encodingFormat" : {
             "@language" : null,
-            "@direction": null,
             "@id" : "http://schema.org/encodingFormat"
         },
         "identifier": {
             "@language" : null,
-            "@direction": null,
             "@id": "https://schema.org/identifier"
         },
         "illustrator": {
@@ -80,12 +72,10 @@
         },
         "integrity": {
             "@language" : null,
-            "@direction": null,
             "@id": "https://www.w3.org/ns/pub#integrity"
         },
         "inLanguage": {
             "@language" : null,
-            "@direction": null,
             "@container": "@list",
             "@id": "http://schema.org/inDirection"
         },
@@ -129,7 +119,6 @@
         },
         "rel": {
             "@language" : null,
-            "@direction": null,
             "@container": "@set",
             "@id": "https://www.w3.org/ns/pub#rel"
         },
@@ -137,10 +126,9 @@
             "@container": "@list",
             "@id": "https://schema.org/translator"
         },
-        "id"        : "@id",
-        "type"      : "@type",
-        "value"     : "@value",
-        "language"  : "@language",
-        "direction" : "@direction"
+        "id"       : "@id",
+        "type"     : "@type",
+        "value"    : "@value",
+        "language" : "@language"
     }
 }

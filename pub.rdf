@@ -55,12 +55,6 @@
     <rdfs:label>Resource list</rdfs:label>
   </rdf:Property>
 
-  <rdf:Property rdf:about="https://www.w3.org/ns/pub#direction">
-    <rdfs:label>Base direction for textual items</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/pub-manifest/#manifest-lang-dir"/>
-    <rdfs:comment>Base direction for textual items</rdfs:comment>
-  </rdf:Property>
-
   <rdfs:Class rdf:about="https://www.w3.org/ns/pub#LinkedResource">
     <rdfs:comment>General type used for resources linked from the manifest.</rdfs:comment>
     <rdfs:label>General type used for resources linked from the manifest.</rdfs:label>
