@@ -1,0 +1,8 @@
+URI: pub-context-jsonld10
+
+URI: pub-context-jsonld10.jsonld
+Content-Type: application/ld+json; qs=0.5
+
+URI: pub-context-jsonld10.json
+Content-Type: application/json; qs=0.4
+
