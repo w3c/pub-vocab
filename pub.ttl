@@ -45,11 +45,6 @@ pub:rel a rdf:Property ;
 	rdfs:comment "Equivalent to the rel attribute in HTML; uses either the IANA link registry data, or specially minted URL-s." ;
 	rdfs:isDefinedBy <https://www.w3.org/TR/pub-manifest/#linkedResource> .
 
-pub:length a rdf:Property ;
-	rdfs:label "Resource level length" ;
-	rdfs:comment "The total length of a time-based media resource in (possibly fractional) seconds." ;
-	rdfs:isDefinedBy <https://www.w3.org/TR/pub-manifest/#linkedResource> .
-
 pub:integrity a rdf:Property ;
 	rdfs:label "Resource integrity" ;
 	rdfs:comment "A cryptographic hashing of the resource that allows its integrity to be verified." ;
