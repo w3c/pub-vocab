@@ -71,13 +71,6 @@
             "rdfs:label": "Resource list"
         },
         {
-            "@id": "pub:length",
-            "@type": "rdf:Property",
-            "rdfs:comment": "The total length of a time-based media resource in (possibly fractional) seconds.",
-            "rdfs:isDefinedBy": "https://www.w3.org/TR/pub-manifest/#linkedResource",
-            "rdfs:label": "Resource level length"
-        },
-        {
             "@id": "pub:integrity",
             "@type": "rdf:Property",
             "rdfs:comment": "A cryptographic hashing of the resource that allows its integrity to be verified.",

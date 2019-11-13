@@ -83,10 +83,6 @@
             "@container": "@list",
             "@id": "https://schema.org/letterer"
         },
-        "length": {
-            "@type": "xsd:double",
-            "@id": "https://www.w3.org/ns/pub#length"
-        },
         "links": {
             "@container": "@set",
             "@type" : "@id",
