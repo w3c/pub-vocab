@@ -4,9 +4,9 @@
 
 This is the repository for the Publication Manifest vocabulary and JSON-LD context files. It is adjunct to the work on Publication Manifests, developed by the [Publishing Working Group](https://www.w3.org/publishing/groups/publ-wg/).
 
-The vocabulary and context files in this repository are served via their canonical URL, based on `https://www.w3.org/ns/pub` and `https://www.w3.org/ns/pub-context`, respectively, using content negotiations. The HTTP requests are resolved to
+The vocabulary and context files in this repository are served via their canonical URL, based on `https://www.w3.org/ns/pub-vocab/manifest` and `https://www.w3.org/ns/pub-context`, respectively, using content negotiations. The HTTP requests are resolved to
 
-- `https://www.w3.org/ns/pub.{jsonld,json,rdf,ttl,html}` for the vocabulary
+- `https://www.w3.org/ns/pub-vocab/manifest.{jsonld,json,rdf,ttl,html}` for the vocabulary
 - `https://www.w3.org/ns/pub-context.{json,jsonld}` for the JSON-LD context file
 
 depending on the accept header of the request.

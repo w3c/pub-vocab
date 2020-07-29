@@ -23,7 +23,7 @@
         "alternate": {
             "@container": "@set",
             "@type" : "@id",
-            "@id": "https://www.w3.org/ns/pub#alternate"
+            "@id": "https://www.w3.org/ns/pub-vocab/manifest#alternate"
         },
         "artist": {
             "@container": "@list",
@@ -81,7 +81,7 @@
         "integrity": {
             "@language" : null,
             "@direction": null,
-            "@id": "https://www.w3.org/ns/pub#integrity"
+            "@id": "https://www.w3.org/ns/pub-vocab/manifest-vocab/manifest#integrity"
         },
         "inLanguage": {
             "@language" : null,
@@ -96,10 +96,10 @@
         "links": {
             "@container": "@set",
             "@type" : "@id",
-            "@id": "https://www.w3.org/ns/pub#links"
+            "@id": "https://www.w3.org/ns/pub-vocab/manifest-vocab/manifest#links"
         },
         "LinkedResource": {
-            "@id": "https://www.w3.org/ns/pub#LinkedResource"
+            "@id": "https://www.w3.org/ns/pub-vocab/manifest#LinkedResource"
         },
         "penciler": {
             "@container": "@list",
@@ -116,18 +116,18 @@
         "readingOrder": {
             "@container": "@list",
             "@type" : "@id",
-            "@id": "https://www.w3.org/ns/pub#readingOrder"
+            "@id": "https://www.w3.org/ns/pub-vocab/manifest#readingOrder"
         },
         "resources": {
             "@container": "@set",
             "@type" : "@id",
-            "@id": "https://www.w3.org/ns/pub#resources"
+            "@id": "https://www.w3.org/ns/pub-vocab/manifest#resources"
         },
         "rel": {
             "@language" : null,
             "@direction": null,
             "@container": "@set",
-            "@id": "https://www.w3.org/ns/pub#rel"
+            "@id": "https://www.w3.org/ns/pub-vocab/manifest#rel"
         },
         "translator": {
             "@container": "@list",
