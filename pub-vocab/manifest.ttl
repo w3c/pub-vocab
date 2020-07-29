@@ -4,12 +4,13 @@
 @prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dc:     <http://purl.org/dc/elements/1.1/> .
 @prefix schema: <https://schema.org/> .
+@prefix pub:    <https://www.w3.org/ns/pub-vocab/manifest#> .
 
 
 pub: a owl:Ontology ;
-    schema:title "Publication Manifest Ontology" ;
+    schema:title "Publication Manifest Vocabulary" ;
     schema:creator <https://www.ivan-herman.net/foaf#me> ;
-    schema:dateModified "2019-04-17" ;
+    schema:dateModified "2020-07-29" ;
     rdfs:comment "Terms defined by the Publishing Working Group, to be used by the Publication Manifest" ;
     rdfs:seeAlso <https://www.w3.org/TR/pub-manifest/> .
 

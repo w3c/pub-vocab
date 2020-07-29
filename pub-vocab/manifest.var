@@ -1,16 +1,16 @@
-URI: pub
+URI: manifest
 
-URI: pub.html
+URI: manifest.html
 Content-Type: text/html
 
-URI: pub.ttl
+URI: manifest.ttl
 Content-Type: text/turtle; qs=0.6
 
-URI: pub.jsonld
+URI: manifest.jsonld
 Content-Type: application/ld+json; qs=0.5
 
-URI: pub.rdf
+URI: manifest.rdf
 Content-Type: application/rdf+xml; qs=0.4
 
-URI: pub.json
+URI: manifest.json
 Content-Type: application/json; qs=0.3

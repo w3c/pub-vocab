@@ -1,6 +1,6 @@
 {
     "@context": {
-        "pub": "https://www.w3.org/ns/pub#",
+        "pub": "https://www.w3.org/ns/pub-vocab/manifest#",
         "owl": "http://www.w3.org/2002/07/owl#",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "dc": "http://purl.org/dc/elements/1.1/",
@@ -20,13 +20,13 @@
     },
     "@graph": [
         {
-            "@id": "https://www.w3.org/ns/pub#",
+            "@id": "https://www.w3.org/ns/pub-vocab/manifest#",
             "@type": "owl:Ontology",
             "rdfs:comment": "Terms defined by the Publishing Working Group, to be used by the Publication Manifest",
             "rdfs:seeAlso": "https://www.w3.org/TR/pub-manifest/",
             "schema:creator": "https://www.ivan-herman.net/foaf#me",
-            "schema:dateModified": "2019-04-17",
-            "schema:title": "Publication Manifest Ontology"
+            "schema:dateModified": "2020-07-29",
+            "schema:title": "Publication Manifest Vocabulary"
         },
         {
             "@id": "pub:LinkedResource",
