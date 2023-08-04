@@ -87,7 +87,7 @@
             "@language" : null,
             "@direction": null,
             "@container": "@list",
-            "@id": "http://schema.org/inDirection"
+            "@id": "http://schema.org/inLanguage"
         },
         "letterer": {
             "@container": "@list",
